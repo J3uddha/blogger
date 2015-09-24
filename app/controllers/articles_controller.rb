@@ -1,5 +1,7 @@
 class ArticlesController < ApplicationController
 
+	before_filter :require_login, except: [:index, :show]
+
 	include ArticlesHelper #brings in param requirements for making new articles
 
 	def index

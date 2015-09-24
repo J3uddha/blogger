@@ -10,5 +10,8 @@
     </li>
   <% end %>
 </ul>
+
+<% if logged_in? %>
   	<%# "New Article" link%>
-<%= link_to "Create a New Article", new_article_path, class: "new_article" %>
+	<%= link_to "Create a New Article", new_article_path, class: "new_article" %>
+<% end %>

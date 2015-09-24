@@ -7,3 +7,7 @@
     </li>
   <% end %>
 </ul>
+
+<% if logged_in? %>
+	<p><%= link_to "delete all", tags_path, method: :delete, data: {confirm: "Really delete all tags?"} %></p>
+ <% end %>
