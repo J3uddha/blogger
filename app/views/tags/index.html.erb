@@ -3,9 +3,6 @@
 <ul id="tags">
   <% @tags.each do |tag| %>
     <li>
-      <%#= article.title %>		<%# shows the title%>
-
-     <%# shows title,adds link, formats it to look like a title with the class attr, and also adding CSS 'id' attr%>
       <%= link_to tag, tag_path(tag), class: 'tag', id: "tag_#{tag.id}" %>
     </li>
   <% end %>
